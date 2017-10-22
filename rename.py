@@ -4,7 +4,7 @@ import sys, os, time
 print ("Current Directory is %s \n" %os.getcwd())
 cont = input("Rename Files in current directory (Y)es, (N)o\n")
 path =  os.getcwd()
-if cont in ["Y", "y", "Yes", "No"]:
+if cont in ["Y", "y", "Yes", "yes"]:
     for orig_name in os.listdir():
         if not orig_name.startswith("S"):
             addS = "S" + orig_name
